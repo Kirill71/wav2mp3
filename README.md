@@ -19,10 +19,11 @@ Buildable on any more-or-less modern distribution (gcc 4.8+) as easy as "cmake .
 Static libmp3lame library must be installed to /usr/local/lib prior to building app or you can use local lame lib 
 just configure CMake with flag "-DUSE_LOCAL_LAME_LIB=TRUE".
 
-<h2>Visaul Studio</h2>
+<h2>Windows</h2>
 Latest cmake properly work with latest Visual Studio since 19 version.
-Project can be opened in VS and will be built.
+Project can be opened in Visual Studio and will be built.
 You don't need any additional steps.
+I haven't tried building it using MinGW but I suppose it will work(or you will need some small efford:))
 
   
 
