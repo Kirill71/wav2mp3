@@ -52,7 +52,7 @@ namespace app {
             using ThreadPoolContainer = std::vector<Type>;
 
         private:
-            class ThreadJoiner {
+            class ThreadJoiner final {
             public:
                 explicit ThreadJoiner(ThreadPoolContainer<ThreadImpl> &threads)
                         : _threads(threads) {

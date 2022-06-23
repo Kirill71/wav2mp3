@@ -1,7 +1,7 @@
 #include <cassert>
 
-#include "../include/utils/mutex.h"
-#include "../include/utils/utils.h"
+#include "utils/mutex.h"
+#include "utils/utils.h"
 
 namespace app
 {
