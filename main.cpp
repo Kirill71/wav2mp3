@@ -41,17 +41,17 @@ int main(int argc, char* argv[])
           {
               throwSystemException("Wav files are absent in dir: " + std::string(dirPath));
           }
-        Mutex logMutex;
+        Mutex taskMutex;
         ThreadPool pool;
         for (const auto &wavFile: wavFiles) 
         {
             pool.addTask(
                     [&](const std::string &filePath) {
+                        MutexGuard guard(taskMutex);
                         app::importing::WavReader wavReader;
                         app::exporting::Mp3Writer mp3Writer;
                         auto audioStorage = wavReader.read(wavFile);
                         mp3Writer.write(std::move(audioStorage));
-                        MutexGuard guard(logMutex);
                         std::cout << "File has been processed: " << filePath << std::endl;
                     }, wavFile);
         }
