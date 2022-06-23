@@ -3,9 +3,9 @@
 #include <memory>
 #include <cassert>
 
-#include "../include/conversion/wav_header.h"
-#include "../include/import/wav_reader.h"
-#include "../include/utils/utils.h"
+#include "conversion/wav_header.h"
+#include "import/wav_reader.h"
+#include "utils/utils.h"
 
 namespace app
 {

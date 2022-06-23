@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
     if (argc != 2)
     {
         usage();
-        std::cerr << "command line tool error: " << argc - 1
+        std::cerr << "wav2mp3 error: " << argc - 1
                   << " arguments provided but 1 required" << std::endl;
         return EXIT_SUCCESS;
     }

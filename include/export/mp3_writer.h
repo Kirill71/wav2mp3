@@ -6,9 +6,9 @@
 #include <vector>
 #include <algorithm>
 
-#include "../conversion/audio_storage.h"
-#include "../lame/lame.h"
-#include "../utils/utils.h"
+#include "conversion/audio_storage.h"
+#include "lame/lame.h"
+#include "utils/utils.h"
 
 namespace app 
 {

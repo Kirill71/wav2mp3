@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.18)
 project(wav2mp3)
 
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    add_compile_options(-O3 -Wall)
-    set(CMAKE_CXX_FLAGS "-fsanitize=thread")
+    add_compile_options(-O3 -g -Wall)
+    #set(CMAKE_CXX_FLAGS "-fsanitize=thread")
 endif()
 
 if (UNIX)

@@ -4,8 +4,8 @@
 #include <dirent.h>
 #endif
 
-#include "../include/utils/utils.h"
-#include "../include/utils/wav_file_path_resolver.h"
+#include "utils/utils.h"
+#include "utils/wav_file_path_resolver.h"
 
 namespace app
 {
